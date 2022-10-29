@@ -110,15 +110,12 @@ function Staff(array) {
                     <img src="${element.img}" alt="${element.nombre}" class="card-img-bottom" id="fotoStaff">
                     <div class="card-body">
                         <p class="card-text" id="Especialidad">Especialidad: ${element.Especialidad}</p>
-                        <button class="btn btn-outline-primary" id="selecespecialista" type="submit">Seleccionar</button>
+                        <button class="btn btn-outline-primary" type="submit" onclick="selectdr()">Seleccionar</button>
                     </div>
                 </div>`;
 
-
     contTarjetas.innerHTML += html;
     });
-    const btnselecesp = document.getElementById("selecespecialista");
-    btnselecesp.addEventListener( "click",() => alert('Selecciono Dra. Harleen Frances Quinzel' ) );
     
 }
 
@@ -162,3 +159,12 @@ btnLogout.addEventListener('click', () => {
 
 window.onload = () => estaLogueado(recuperarUsuario(localStorage)); 
 
+
+function selectdr() {
+    let x = document.getElementById("btndr");
+    if (x.style.display === "none") {
+    x.style.display = "block";
+    } else {
+    x.style.display = "none";
+    }
+}

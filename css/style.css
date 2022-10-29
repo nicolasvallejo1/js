@@ -2,7 +2,7 @@
     width:500px;
 }
 
-.fakeAncla{
+.indent{
     text-decoration: underline;
     color: #0d6efd;
 }
@@ -12,3 +12,11 @@
     padding: 20px;
     margin-bottom: 20px;
 }
+
+#btndr {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: rgb(209, 214, 216);
+    margin-top: 20px;
+  }
