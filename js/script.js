@@ -105,7 +105,7 @@ function presentarInfo(array, clase) {
 function Staff(array) {
     contTarjetas.innerHTML = "";
     array.forEach((element) => {
-    let html = `<div class="card cardMascota" id="tarjeta${element.nombre}">
+    let html = `<div class="card cardr" id="tarjeta${element.nombre}">
                     <h3 class="card-header" id="nombredr"> ${element.nombre}</h3>
                     <img src="${element.img}" alt="${element.nombre}" class="card-img-bottom" id="fotoStaff">
                     <div class="card-body">
@@ -118,7 +118,7 @@ function Staff(array) {
     contTarjetas.innerHTML += html;
     });
     const btnselecesp = document.getElementById("selecespecialista");
-    btnselecesp.addEventListener( "click",() => alert('Seleciono Dra. Harleen Frances Quinzel' ) );
+    btnselecesp.addEventListener( "click",() => alert('Selecciono Dra. Harleen Frances Quinzel' ) );
     
 }
 
